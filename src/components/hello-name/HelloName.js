@@ -1,22 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 
-import { greetName } from '../../core';
+import { greetName } from "../../core";
 
-function HelloName({
-  classes,
-  name,
-  style,
-}) {
-  const greeting = greetName({name});
+function HelloName({ classes, name, style }) {
+  const greeting = greetName({ name });
   return (
-    <Typography className={classes.root} style={style}>
+    <div className={classes.root} style={style}>
       {greeting}
-    </Typography>
+    </div>
   );
-};
+}
 
 HelloName.propTypes = {
   /** @ignore */
@@ -27,9 +22,8 @@ HelloName.propTypes = {
   style: PropTypes.object,
 };
 
-const styles = theme => ({
-  root: {
-  },
+const styles = (theme) => ({
+  root: {},
 });
 
 export default withStyles(styles)(HelloName);
