@@ -2,7 +2,6 @@
   "name": "rcl-demo-testing",
   "description": "creating npm command",
   "version": "0.0.6",
-  "private": false,
   "homepage": "https://github.com/Bobbykumar706584/rcl-demo-testing/",
   "repository": {
     "type": "git",
