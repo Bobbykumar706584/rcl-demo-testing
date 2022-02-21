@@ -1,12 +1,12 @@
 {
-  "name": "hello-world-react-component-library",
-  "description": "A Collection of Components for Telling the World Hello.",
+  "name": "rcl-demo-testing",
+  "description": "creating npm command",
   "version": "0.0.6",
   "private": false,
-  "homepage": "https://unfoldingword-box3.github.io/hello-world-react-component-library/",
+  "homepage": "https://github.com/Bobbykumar706584/rcl-demo-testing/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/unfoldingWord-box3/hello-world-react-component-library"
+    "url": "https://github.com/Bobbykumar706584/rcl-demo-testing"
   },
   "license": "MIT",
   "engines": {
