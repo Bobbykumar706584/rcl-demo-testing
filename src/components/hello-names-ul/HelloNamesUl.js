@@ -1,26 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@mui/styles";
 
-import { HelloName } from '../../components';
+import { HelloName } from "../../components";
 
-function HelloNamesUl({
-  classes,
-  names,
-  style,
-}) {
-  const helloNameComponents = names.map(name =>
+function HelloNamesUl({ classes, names, style }) {
+  const helloNameComponents = names.map((name) => (
     <li>
       <HelloName name={name} />
     </li>
-  );
+  ));
 
   return (
     <ul className={classes.root} style={style}>
       {helloNameComponents}
     </ul>
   );
-};
+}
 
 HelloNamesUl.propTypes = {
   /** @ignore */
@@ -31,9 +27,8 @@ HelloNamesUl.propTypes = {
   style: PropTypes.object,
 };
 
-const styles = theme => ({
-  root: {
-  },
+const styles = (theme) => ({
+  root: {},
 });
 
 export default withStyles(styles)(HelloNamesUl);
