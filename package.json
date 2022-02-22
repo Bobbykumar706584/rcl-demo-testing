@@ -1,6 +1,6 @@
 {
-  "name": "rcl-demo-testing",
-  "description": "creating npm command",
+  "name": "bobby-rcl",
+  "description": "creating react component library",
   "version": "0.0.6",
   "homepage": "https://github.com/Bobbykumar706584/rcl-demo-testing/",
   "repository": {
