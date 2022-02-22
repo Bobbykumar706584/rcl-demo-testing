@@ -1,16 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 
 import { greetName } from "../../core";
 
 function HelloName({ classes, name, style }) {
   const greeting = greetName({ name });
   return (
-    <Typography className={classes.root} style={style}>
+    <span className={classes.root} style={style}>
       {greeting}
-    </Typography>
+    </span>
   );
 }
 
