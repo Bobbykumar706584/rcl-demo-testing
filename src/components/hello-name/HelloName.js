@@ -6,11 +6,7 @@ import { greetName } from "../../core";
 
 function HelloName({ classes, name, style }) {
   const greeting = greetName({ name });
-  return (
-    <div className={classes.root} style={style}>
-      {greeting}
-    </div>
-  );
+  return { greeting };
 }
 
 HelloName.propTypes = {
