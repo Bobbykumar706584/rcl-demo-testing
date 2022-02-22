@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { greetName } from "../../core";
+import { withStyles } from "@material-ui/core/styles";
 
-function HelloName({ name }) {
+function HelloName({ classes, name, style }) {
   const greeting = greetName({ name });
-  return { greeting };
+  return (
+    <span className={classes.root} style={style}>
+      {greeting}
+    </span>
+  );
 }
 
 HelloName.propTypes = {
