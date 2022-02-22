@@ -7,9 +7,9 @@ import { greetName } from "../../core";
 function HelloName({ classes, name, style }) {
   const greeting = greetName({ name });
   return (
-    <Typography className={classes.root} style={style}>
+    <div className={classes.root} style={style}>
       {greeting}
-    </Typography>
+    </div>
   );
 }
 
