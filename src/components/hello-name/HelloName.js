@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@mui/styles";
-import { Typography } from "@mui/material";
 import { greetName } from "../../core";
 
-function HelloName({ classes, name, style }) {
+function HelloName({ name }) {
   const greeting = greetName({ name });
   return { greeting };
 }
