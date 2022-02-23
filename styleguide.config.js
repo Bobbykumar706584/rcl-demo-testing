@@ -40,7 +40,6 @@ module.exports = {
     text: "View on GitHub",
   },
   styles,
-  theme,
   getComponentPathLine: (componentPath) => {
     const dirname = path.dirname(componentPath, ".js");
     const file = dirname.split("/").slice(-1)[0];
